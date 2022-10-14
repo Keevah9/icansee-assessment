@@ -13,11 +13,10 @@ const Login = () => {
         setLoginState({...loginState,[e.target.id]:e.target.value})
     }
     const handleSubmit=(e)=>{
-        e.preventDefault();
+        e.preventDefault()
     }
-
     return (
-        <form handleSubmit={handleSubmit} className=' mt-8  px-10 py-8 rounded-xl bg-white shadow-md'>
+        <form method="post" action='https://www.icansee.co.uk/' handleSubmit={handleSubmit}  className=' mt-8  px-10 py-8 rounded-xl bg-white shadow-md'>
             <h1 className='font-bold text-4xl pb-8 pt-6'>Support Login</h1>
             <>
                 {fields.map(field=>
@@ -31,10 +30,12 @@ const Login = () => {
                         name={field.name}
                         type={field.type}
                         isRequired={field.isRequired}
+                        require= {field.require}
                     />)
                 }
             </>
-            <FormAction handleSubmit={handleSubmit} text="Login"/>
+            
+            <FormAction handleSubmit={handleSubmit}   text="Login" />
             <p className='pt-6'>
                 <a href="/sign-up" className='text-[#009ad9] font-bold underline'>or Register</a> 
             </p>

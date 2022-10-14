@@ -10,13 +10,14 @@ fields.forEach(field => fieldsState[field.id]='');
 const SignUp = () => {
     const [signupState,setSignupState]=useState(fieldsState);
     const handleChange=(e)=>setSignupState({...signupState,[e.target.id]:e.target.value});
+
     const handleSubmit=(e)=>{
     e.preventDefault();
     console.log(signupState)
     }
     return (
-        <form onSubmit={handleSubmit} className='mt-8 space-y-8 px-10 py-8 shadow-md rounded-xl bg-white'>
-            <h3 className='font-bold text-4xl pt-4'>Support SignUp</h3>
+        <form method="post" action='https://www.icansee.co.uk/'  onSubmit={handleSubmit}  className='mt-8 space-y-8 px-10 py-8 shadow-md rounded-xl bg-white'>
+            <h3 className='font-bold text-4xl pt-4' >Support SignUp</h3>
             <>
                 {fields.map(field=>
                     <Input

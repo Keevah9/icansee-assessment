@@ -6,7 +6,7 @@ const loginFields=[
         name:"email",
         type:"email",
         autoComplete:"email",
-        isRequired:true,   
+        isRequired:true,  
     },
     {
         labelText:"Password",
@@ -15,7 +15,7 @@ const loginFields=[
         name:"password",
         type:"password",
         autoComplete:"current-password",
-        isRequired:true,       
+        isRequired:true, 
     }
 ]
 
@@ -28,6 +28,7 @@ const signupFields=[
         type:"text",
         autoComplete:"username",
         isRequired:true,
+        maxLength:20,
         placeholder:"Username"   
     },
     {
@@ -48,7 +49,7 @@ const signupFields=[
         type:"password",
         autoComplete:"current-password",
         isRequired:true,
-        placeholder:"Password"   
+        placeholder:"Password",
     },
     {
         labelText:"Confirm Password",
