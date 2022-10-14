@@ -13,11 +13,11 @@ const SignUp = () => {
 
     const handleSubmit=(e)=>{
     e.preventDefault();
-    console.log(signupState)
     }
+
     return (
         <form method="post" action='https://www.icansee.co.uk/'  onSubmit={handleSubmit}  className='mt-8 space-y-8 px-10 py-8 shadow-md rounded-xl bg-white'>
-            <h3 className='font-bold text-4xl pt-4' >Support SignUp</h3>
+            <h3 className='font-bold text-4xl pt-4'>Support SignUp</h3>
             <>
                 {fields.map(field=>
                     <Input

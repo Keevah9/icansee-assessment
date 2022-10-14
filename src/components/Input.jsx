@@ -12,9 +12,7 @@ export default function Input({
     placeholder,
     customClass
 }){
-  const validate =()=>{
-    return value.length > 5
-  }
+
     return(
         <div className="my-2 text-start">
             <label htmlFor={labelFor} className="font-medium text-[14px]">
@@ -22,7 +20,6 @@ export default function Input({
             </label>
             <input
               onChange={handleChange}
-              validate={validate}
               value={value}
               id={id}
               name={name}

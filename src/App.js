@@ -5,8 +5,8 @@ import {Login, SignUp} from './components'
 
 function App() {
   return (
-    <section className="bg h-screen flex items-center overflow-hidden justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
-      <main className="max-w-lg  w-full  space-y-8">
+    <section className="bg min-h-screen flex items-center overflow-hidden justify-center text-center px-4 sm:px-6 lg:px-8">
+      <main className="max-w-lg  w-full space-y-8">
         <img
           src="/assets/logo.png"
           alt="icansee logo"
